@@ -21,7 +21,7 @@ const Hero = () => {
             I develop user interfaces <br className="sm:block hidden" />
             and web applications
           </p>
-          <div className="mt-40 flex gap-8">
+          <div className="mt-40 flex gap-4 flex-row lg:gap-8">
             <a href={CV} download>
               <button className="bg-white p-2 px-6 border rounded-md text-black hover:bg-transparent hover:text-white">
                 Download CV

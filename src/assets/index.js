@@ -35,6 +35,9 @@ import otonomis from "./company/otonomis.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import taskmaster from './taskmaster.png';
+import veterinary from './veterinary.png';
+import portfolio from './portfolio.png'
 
 export {
   logo,
@@ -71,4 +74,7 @@ export {
   gmail,
   linkedin,
   github,
+  taskmaster,
+  veterinary,
+  portfolio
 };

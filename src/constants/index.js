@@ -23,6 +23,9 @@ import {
   gmail,
   linkedin,
   github,
+  taskmaster,
+  veterinary,
+  portfolio,
 } from "../assets";
 
 export const navLinks = [
@@ -31,8 +34,12 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -155,7 +162,7 @@ const experiences = [
     company_name: "Otonomis Pvt Ltd",
     icon: otonomis,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "02/2019 - 03/2021",
     points: [
       "Designed widgets and created high-quality visual components by using lit programming for the company’s web application. ",
       "Utilize browser development tools and debugging techniques to identify and resolve frontend bugs efficiently.",
@@ -192,37 +199,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Task Master",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to add, edit, delete and search tasks from the lists.This app helps you organize your tasks, set priorities.",
     tags: [
       {
-        name: "react",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
+        name: "redux-saga",
         color: "green-text-gradient",
       },
       {
@@ -230,29 +216,92 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: taskmaster,
+    source_code_link: "https://github.com/iamsujanstha/TaskMaster",
   },
   {
-    name: "Trip Guide",
+    name: "Portfolio",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Portfolio website that showcases my skills and experience as a web developer. site is built with React and Framer Motion, and styled with Tailwind CSS.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/iamsujanstha/Personal-website",
+  },
+  {
+    name: "Veterinary Care",
+    description:
+      "Veterinary care is a web-based platform that allows users to add, edit, delete and search pets from the lists.This app helps you organize your pets, set priorities.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: veterinary,
+    source_code_link: "https://github.com/iamsujanstha/Veterinary-app",
+  },
+  {
+    name: "Oneline Room Booking",
+    description:
+      "A comprehensive travel booking platform that allows users to book hotels and offers curated recommendations for popular destinations.",
     tags: [
       {
         name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "prisma",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "hhttps://github.com/iamsujanstha/online-room-booking",
+  },
+  {
+    name: "Portfolio",
+    description:
+      "Portfolio website that showcases my skills and experience as a web developer. site is built with React and Framer Motion, and styled with Tailwind CSS.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: "https://github.com/iamsujanstha/Personal-website",
   },
 ];
 
