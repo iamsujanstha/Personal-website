@@ -262,7 +262,7 @@ const projects = [
     source_code_link: "https://github.com/iamsujanstha/Veterinary-app",
   },
   {
-    name: "Oneline Room Booking",
+    name: "Online Room Booking",
     description:
       "A comprehensive travel booking platform that allows users to book hotels and offers curated recommendations for popular destinations.",
     tags: [
