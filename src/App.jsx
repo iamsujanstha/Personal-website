@@ -1,6 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
+        <ScrollToTop />
         <About />
         <Experience />
         <Tech />

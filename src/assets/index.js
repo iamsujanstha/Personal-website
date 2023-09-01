@@ -39,6 +39,7 @@ import taskmaster from "./taskmaster.png";
 import veterinary from "./veterinary.png";
 import portfolio from "./portfolio.png";
 import smartapp from "./smartapp.png";
+import upArrow from './up-arrow.png'
 
 export {
   logo,
@@ -79,4 +80,5 @@ export {
   veterinary,
   portfolio,
   smartapp,
+  upArrow
 };

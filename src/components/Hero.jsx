@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import CV from "../assets/SUJAN SHRESTHA (RESUME).pdf";
+import upArrow from '../assets/up-arrow.png'
 
 const Hero = () => {
   return (
@@ -21,14 +22,14 @@ const Hero = () => {
             Frontend Engineer <br className="sm:block hidden" />
             ReactJS | NextJS | TypeScript | Redux
           </p>
-          <div className="mt-40 flex gap-4 flex-row lg:gap-8">
+          <div className="mt-40 flex gap-6 flex-row lg:gap-8">
             <a href={CV} download>
-              <button className="bg-white p-2 px-6 border rounded-md text-black hover:bg-transparent hover:text-white">
+              <button className="bg-white p-2  lg:px-6 md:px-6 border rounded-md text-black hover:bg-transparent hover:text-white">
                 Download CV
               </button>
             </a>
             <a href={CV} target="_blank">
-              <button className="bg-transparent p-2 px-6 rounded-md border-white border-2 text-white hover:bg-white hover:text-black">
+              <button className="bg-transparent lg:px-6 md:px-6 p-2 rounded-md border-white border-2 text-white hover:bg-white hover:text-black">
                 View CV
               </button>
             </a>

@@ -243,7 +243,7 @@ const projects = [
       },
     ],
     image: smartapp,
-    source_code_link: "https://github.com/iamsujanstha/Personal-website",
+    source_code_link: "https://github.com/iamsujanstha/Smart-App",
   },
   {
     name: "Veterinary Care",
