@@ -25,6 +25,14 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+   const scrollToSection = (sectionId) => {
+     const section = document.getElementById(sectionId);
+     if (section) {
+       section.scrollIntoView({ behavior: "smooth" });
+       setActive(sectionId); // Update the active section based on the scrolled section
+     }
+   };
+
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
@@ -49,10 +57,10 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.id ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}>
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              onClick={() => scrollToSection(nav.id)}>
+              {nav.title}
             </li>
           ))}
         </ul>
@@ -78,9 +86,9 @@ const Navbar = () => {
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
+                    scrollToSection(nav.id);
                   }}>
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.title}
                 </li>
               ))}
             </ul>

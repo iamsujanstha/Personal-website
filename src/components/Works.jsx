@@ -18,6 +18,13 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+  const maxLength = 155;
+  const [isExpanded, setIsExpanded] = React.useState(false);
+
+  const toggleReadMore = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -28,7 +35,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
         <div className="relative w-full h-[230px]">
-          <img src={image} alt="project_image" className="w-full h-full object-cover rounded-2xl" />
+          <img src={image} alt="project_image" className="w-full h-full rounded-2xl" />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
@@ -41,7 +48,16 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          {description.length > maxLength && !isExpanded ? (
+            <div className="">
+              <span className="mt-2 text-secondary text-[14px]">{description.slice(0, maxLength)}</span>
+              <span className="mt-2 text-[12px] text-blue-700 hover:cursor-pointer" onClick={toggleReadMore}>
+                ...Read More
+              </span>
+            </div>
+          ) : (
+            <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          )}
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
@@ -82,6 +98,7 @@ const Works = () => {
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         }}
         breakpoints={{
           640: {
@@ -97,7 +114,7 @@ const Works = () => {
             spaceBetween: 50,
           },
         }}
-        modules={[Autoplay,Pagination]}
+        modules={[Autoplay, Pagination]}
         className="mySwiper">
         <div className="mt-20 flex flex-wrap gap-7">
           {projects.map((project, index) => (

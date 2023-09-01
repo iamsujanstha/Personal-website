@@ -26,6 +26,7 @@ import {
   taskmaster,
   veterinary,
   portfolio,
+  smartapp,
 } from "../assets";
 
 export const navLinks = [
@@ -220,24 +221,28 @@ const projects = [
     source_code_link: "https://github.com/iamsujanstha/TaskMaster",
   },
   {
-    name: "Portfolio",
+    name: "SmartApp",
     description:
-      "Portfolio website that showcases my skills and experience as a web developer. site is built with React and Framer Motion, and styled with Tailwind CSS.",
+      "An application that allows users to generate photos, images, videos and voices using OpenAI's GPT-3 API. This app helps you generate content for your social media posts, blogs, articles, etc.",
     tags: [
       {
-        name: "reactjs",
+        name: "nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "framer-motion",
+        name: "typescript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwindcss",
+        name: "taiwlindcss",
         color: "pink-text-gradient",
       },
+      {
+        name: "openai",
+        color: "green-text-gradient",
+      },
     ],
-    image: portfolio,
+    image: smartapp,
     source_code_link: "https://github.com/iamsujanstha/Personal-website",
   },
   {
