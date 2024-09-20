@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import CV from "../assets/SUJAN SHRESTHA (RESUME).pdf";
+import CV from "../assets/Sujan_Resume_Frontend_5yrs.pdf";
 import upArrow from '../assets/up-arrow.png'
 
 const Hero = () => {
@@ -19,7 +19,7 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Sujan</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Frontend Engineer <br className="sm:block hidden" />
+            Frontend Engineer @InfoDevelopers Pvt. Ltd.<br className="sm:block hidden" />
             ReactJS | NextJS | TypeScript | Redux
           </p>
           <div className="mt-40 flex gap-6 flex-row lg:gap-8">

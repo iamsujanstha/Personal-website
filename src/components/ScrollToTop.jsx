@@ -24,7 +24,7 @@ const ScrollToTop = () => {
     <div className="relative">
       {" "}
       {showTopBtn && (
-        <div onClick={goToTop} className="fixed right-8 bottom-12 hover:cursor-pointer">
+        <div onClick={goToTop} className="fixed right-8 bottom-20 hover:cursor-pointer">
           <img src={upArrow} width={60} height={60} alt="upArrow" />
         </div>
       )}

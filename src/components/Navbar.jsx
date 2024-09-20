@@ -25,14 +25,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-   const scrollToSection = (sectionId) => {
+   const scrollToSection =(sectionId)=> () => {
      const section = document.getElementById(sectionId);
      if (section) {
        section.scrollIntoView({ behavior: "smooth" });
        setActive(sectionId); // Update the active section based on the scrolled section
      }
    };
-
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${
@@ -59,7 +58,7 @@ const Navbar = () => {
               className={`${
                 active === nav.id ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => scrollToSection(nav.id)}>
+              onClick={scrollToSection(nav.id)}>
               {nav.title}
             </li>
           ))}

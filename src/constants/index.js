@@ -27,6 +27,7 @@ import {
   veterinary,
   portfolio,
   smartapp,
+  Info,
 } from "../assets";
 
 export const navLinks = [
@@ -132,10 +133,25 @@ const technologies = [
 const experiences = [
   {
     title: "Frontend Engineer",
+    company_name: "InfoDevelopers",
+    icon: Info,
+    iconBg: "#E6DEDD",
+    date: "09/2023 - Present",
+    link:"https://infodev.com.np/",
+    points: [
+      "Led the end-to-end development of new features, from initial concept through to deployment, maintaining exceptional code quality and performance throughout the process. ",
+      "Refactored legacy code using memoization and optimization strategies, reducing unnecessary API calls and enhancing application performance. ",
+      "Successfully managed multiple concurrent projects, delivering comprehensive code reviews and maintaining consistency in coding standards to meet client expectations. ",
+      "Upgraded a legacy site with responsive design techniques, significantly enhancing accessibility and user experience across all devices, which led to improved client satisfaction."
+    ]
+  },
+  {
+    title: "Frontend Developer",
     company_name: "Aerion Technologies",
     icon: aerion,
     iconBg: "#383E56",
-    date: "01/2023 - Present",
+    date: "01/2021 - 09/2023",
+    link:"https://aerion.com.au/",
     points: [
       "Collaborated with designers to iterate on designs, refining UI/UX elements and ensuring their compatibility with the frontend implementation.",
       "Utilized Redux Saga middleware to manage asynchronous actions, including handling API calls, side effects, and data synchronization, resulting in improved application performance and reliability.",
@@ -144,26 +160,12 @@ const experiences = [
     ],
   },
   {
-    title: "React Developer",
-    company_name: "Hazesoft PL",
-    icon: hazesoft,
-    iconBg: "#E6DEDD",
-    date: "03/2021 - 12/2022",
-    points: [
-      "Actively participated in Agile development methodologies, including sprint planning, daily stand-ups, and retrospective meetings, to ensure efficient project management and timely delivery of features.",
-      "Integrated third-party APIs, including Zendesk script and Recommbee products, to provide additional functionalities and enhance the user experience.",
-      "Successfully maintained and enhanced eCommerce project with 300k+ daily active users.",
-      "Worked on a web-based pharmacy management system using Vue.js, providing efficient and user-friendly interfaces for managing different shifts for locums and internal employees.",
-      "Collaborated closely with the client to gather, prioritize, and implement feature requests, resulting in the successful integration of new functionalities and improved user experience",
-      "Implemented A/B tests and analytics tracking such as GTM, Facebook pixel and Tik-Tok pixel to measure user engagement and conversion rates, leading to data-driven optimizations.",
-    ],
-  },
-  {
     title: "Web developer",
     company_name: "Otonomis Pvt Ltd",
     icon: otonomis,
     iconBg: "#383E56",
-    date: "02/2019 - 03/2021",
+    date: "04/2019 - 12/2020",
+    link: "#",
     points: [
       "Designed widgets and created high-quality visual components by using lit programming for the company’s web application. ",
       "Utilize browser development tools and debugging techniques to identify and resolve frontend bugs efficiently.",
