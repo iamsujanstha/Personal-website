@@ -250,6 +250,8 @@ const projects = [
     ],
     image: taskmaster,
     source_code_link: "https://github.com/iamsujanstha/TaskMaster",
+    descriptionNe:
+      "वेब- आधारित प्लेटफर्म जसले प्रयोगकर्ताहरूलाई सूचीबाट कार्यहरू थप्न, सम्पादन गर्न, मेटाउन र खोज्न अनुमति दिन्छ। यो एपले तपाईंलाई आफ्नो कार्यहरू व्यवस्थित गर्न, प्राथमिकताहरू सेट गर्न मद्दत गर्छ।",
   },
   {
     name: "SmartApp",
@@ -275,6 +277,8 @@ const projects = [
     ],
     image: smartapp,
     source_code_link: "https://github.com/iamsujanstha/Smart-App",
+    descriptionNe:
+      "एउटा अनुप्रयोग जसले प्रयोगकर्ताहरूलाई OpenAI को GPT-3 API प्रयोग गरेर फोटो, छविहरू, भिडियोहरू र आवाजहरू उत्पन्न गर्न अनुमति दिन्छ। यो एपले तपाइँलाई तपाइँको सामाजिक मिडिया पोस्ट, ब्लग, लेख, आदि को लागी सामग्री उत्पन्न गर्न मद्दत गर्दछ।",
   },
   {
     name: "Veterinary Care",
@@ -296,6 +300,7 @@ const projects = [
     ],
     image: veterinary,
     source_code_link: "https://github.com/iamsujanstha/Veterinary-app",
+    descriptionNe: "पशु चिकित्सा हेरचाह एक वेब-आधारित प्लेटफर्म हो जसले प्रयोगकर्ताहरूलाई सूचीबाट घरपालुवा जनावरहरू थप्न, सम्पादन गर्न, मेटाउन र खोज्न अनुमति दिन्छ। यो एपले तपाईंलाई आफ्नो घरपालुवा जनावरहरूलाई व्यवस्थित गर्न, प्राथमिकताहरू सेट गर्न मद्दत गर्छ।"
   },
   {
     name: "Online Room Booking",
@@ -317,6 +322,8 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "hhttps://github.com/iamsujanstha/online-room-booking",
+    descriptionNe:
+      "एक व्यापक यात्रा बुकिंग प्लेटफर्म जसले प्रयोगकर्ताहरूलाई होटलहरू बुक गर्न र लोकप्रिय गन्तव्यहरूको लागि क्युरेट गरिएका सिफारिसहरू प्रदान गर्न अनुमति दिन्छ।",
   },
   {
     name: "Portfolio",
@@ -338,6 +345,8 @@ const projects = [
     ],
     image: portfolio,
     source_code_link: "https://github.com/iamsujanstha/Personal-website",
+    descriptionNe:
+      "पोर्टफोलियो वेबसाइट जसले वेब विकासकर्ताको रूपमा मेरो सीप र अनुभव प्रदर्शन गर्दछ। साइट React र Framer Motion सँग बनाइएको छ, र Tailwind CSS सँग स्टाइल गरिएको छ।",
   },
 ];
 

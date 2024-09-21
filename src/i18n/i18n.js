@@ -7,6 +7,7 @@ import enNavbar from './locale/navbar/en.json';
 import enHero from './locale/hero/en.json';
 import enAbout from './locale/about/en.json';
 import enContact from './locale/contact/en.json';
+import enProject from './locale/projects/en.json'
 
 
 // Nepali translation files
@@ -14,7 +15,8 @@ import neExperience from "./locale/experience/ne.json";
 import neNavbar from './locale/navbar/ne.json';
 import neHero from './locale/hero/ne.json';
 import neAbout from './locale/about/ne.json';
-import neContact from './locale/contact/ne.json'
+import neContact from './locale/contact/ne.json';
+import neProject from './locale/projects/ne.json'
 
 export const geti18nLanguage = (language) => {
   try {
@@ -32,13 +34,15 @@ const resources = {
     about: enAbout,
     contact: enContact,
     experience: enExperience,
+    project: enProject
   },
   ne: {
     navbar: neNavbar,
     hero: neHero,
     about: neAbout,
     contact: neContact,
-    experience: neExperience
+    experience: neExperience,
+    project: neProject
   }
 };
 

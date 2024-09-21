@@ -41,7 +41,8 @@ import portfolio from "./portfolio.png";
 import smartapp from "./smartapp.png";
 import upArrow from './up-arrow.png'
 import Info from './info.png';
-import NepaliFlag from './nepal.svg'
+import nepaliFlag from './nepal.svg';
+import englishFlag from './english.svg'
 
 export {
   logo,
@@ -84,5 +85,6 @@ export {
   smartapp,
   upArrow,
   Info,
-  nepaliflag
+  nepaliFlag,
+  englishFlag
 };

@@ -16,8 +16,10 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { useTranslation } from "react-i18next";
+import { getTextByLanguage } from "../i18n/i18n";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, descriptionNe, tags, image, source_code_link }) => {
   const maxLength = 155;
   const [isExpanded, setIsExpanded] = React.useState(false);
 
@@ -50,13 +52,13 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           {description.length > maxLength && !isExpanded ? (
             <div className="">
-              <span className="mt-2 text-secondary text-[14px]">{description.slice(0, maxLength)}</span>
+              <span className="mt-2 text-secondary text-[14px]">{getTextByLanguage(description, descriptionNe).slice(0, maxLength)}</span>
               <span className="mt-2 text-[12px] text-blue-700 hover:cursor-pointer" onClick={toggleReadMore}>
                 ...Read More
               </span>
             </div>
           ) : (
-            <p className="mt-2 text-secondary text-[14px]">{description}</p>
+            <p className="mt-2 text-secondary text-[14px]">{getTextByLanguage(description, descriptionNe)}</p>
           )}
         </div>
 
@@ -73,20 +75,20 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 };
 
 const Works = () => {
+  const { t } = useTranslation("project");
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} `}>{t('work')}</p>
+        <h2 className={`${styles.sectionHeadText}`}>{t('projects')}.</h2>
       </motion.div>
 
       <div className="w-full flex mb-10">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
-          Following projects showcases my skills and experience through real-world examples of my work. Each project is
-          briefly described with links to code repositories and live demos in it. It reflects my ability to solve
-          complex problems, work with different technologies, and manage projects effectively.
+          {t('description')}
         </motion.p>
       </div>
       <Swiper

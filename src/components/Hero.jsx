@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import i18n from 'i18next';
 
 import { styles } from "../styles";
 import CV from "../assets/Sujan_Resume_Frontend_5yrs.pdf";
@@ -18,9 +19,15 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Sujan</span>
-          </h1>
+          {i18n.language === "en" ?
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              Hi, I'm <span className="text-[#915EFF]">Sujan</span>
+            </h1>
+            :
+            <h1 className={`${styles.heroHeadText} text-white`}>
+              हेल्लो, म <span className="text-[#915EFF]">सुजन</span> हो
+            </h1>
+          }
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             {t("current")}<br className="sm:block hidden" />
             {t("stack")}
