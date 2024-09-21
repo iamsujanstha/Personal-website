@@ -1,10 +1,13 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 import { styles } from "../styles";
 import CV from "../assets/Sujan_Resume_Frontend_5yrs.pdf";
-import upArrow from '../assets/up-arrow.png'
+
 
 const Hero = () => {
+  const { t } = useTranslation("hero");
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -19,18 +22,18 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Sujan</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Frontend Engineer @InfoDevelopers Pvt. Ltd.<br className="sm:block hidden" />
-            ReactJS | NextJS | TypeScript | Redux
+            {t("current")}<br className="sm:block hidden" />
+            {t("stack")}
           </p>
           <div className="mt-40 flex gap-6 flex-row lg:gap-8">
             <a href={CV} download>
               <button className="bg-white p-2  lg:px-6 md:px-6 border rounded-md text-black hover:bg-transparent hover:text-white">
-                Download CV
+                {t("button.download")}
               </button>
             </a>
             <a href={CV} target="_blank">
               <button className="bg-transparent lg:px-6 md:px-6 p-2 rounded-md border-white border-2 text-white hover:bg-white hover:text-black">
-                View CV
+                {t("button.view")}
               </button>
             </a>
           </div>

@@ -1,0 +1,16 @@
+{
+  "hi": "Hi",
+  "name": "I'm Sujan",
+  "frontend": "Frontend",
+  "infodevelopers": "InfoDevelopers Pvt. Ltd.",
+  "react": "React Js",
+  "next": "NextJS",
+  "typescript": "TypeScript",
+  "redux": "Redux",
+  "button": {
+    "download": "Download CV",
+    "view": "View CV"
+  },
+  "current": "Frontend Engineer @InfoDevelopers Pvt. Ltd.",
+  "stack": "ReactJS | NextJS | TypeScript | Redux"
+}

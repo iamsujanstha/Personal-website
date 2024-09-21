@@ -40,7 +40,8 @@ import veterinary from "./veterinary.png";
 import portfolio from "./portfolio.png";
 import smartapp from "./smartapp.png";
 import upArrow from './up-arrow.png'
-import Info from './info.png'
+import Info from './info.png';
+import NepaliFlag from './nepal.svg'
 
 export {
   logo,
@@ -82,5 +83,6 @@ export {
   portfolio,
   smartapp,
   upArrow,
-  Info
+  Info,
+  nepaliflag
 };

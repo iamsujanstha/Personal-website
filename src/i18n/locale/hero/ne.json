@@ -1,0 +1,16 @@
+{
+  "hi": "नमस्ते",
+  "name": "म सुजन हुँ",
+  "frontend": "फ्रन्टएन्ड",
+  "infodevelopers": "InfoDevelopers Pvt. Ltd.",
+  "react": "React Js",
+  "next": "NextJS",
+  "typescript": "TypeScript",
+  "redux": "Redux",
+  "button": {
+    "download": "CV डाउनलोड गर्नुहोस्",
+    "view": "CV हेर्नुहोस्"
+  },
+  "current": "फ्रन्टएन्ड इन्जिनियर @InfoDevelopers प्रा. लि.",
+  "stack": "ReactJS | NextJS | TypeScript | Redux"
+}

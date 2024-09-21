@@ -12,6 +12,8 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { getTextByLanguage } from "../i18n/i18n";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -21,7 +23,7 @@ const ExperienceCard = ({ experience }) => {
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #232631" }}
-      date={experience.date}
+      date={getTextByLanguage(experience.date, experience.dateNe)}
       iconStyle={{ background: experience.iconBg }}
       icon={
         <div className='flex justify-center items-center w-full h-full'>
@@ -34,19 +36,19 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-white text-[24px] font-bold'>{getTextByLanguage(experience.title, experience.titleNe)}</h3>
         <Link
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
           to={experience.link}
           target="_blank"
         >
-          {experience.company_name}
+          {getTextByLanguage(experience.company_name, experience.company_nameNe)}
         </Link>
       </div>
 
       <ul className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((point, index) => (
+        {getTextByLanguage(experience.points, experience.pointsNe).map((point, index) => (
           <li
             key={`experience-point-${index}`}
             className='text-white-100 text-[14px] pl-1 tracking-wider'
@@ -60,14 +62,15 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+  const { t } = useTranslation("experience")
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
+          {t("intro")}
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
+          {t("experience")}.
         </h2>
       </motion.div>
 

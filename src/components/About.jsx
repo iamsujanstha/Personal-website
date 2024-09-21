@@ -6,11 +6,12 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ index, title, icon, href }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
-      <a href={href} target="_blank" rel="noopener noreferrer" className="w-full"> 
+      <a href={href} target="_blank" rel="noopener noreferrer" className="w-full">
         <motion.div
           variants={fadeIn("right", "spring", index * 0.5, 0.75)}
           className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
@@ -32,18 +33,17 @@ const ServiceCard = ({ index, title, icon, href }) => {
 };
 
 const About = () => {
+  const { t } = useTranslation("about");
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={styles.sectionSubText}>{t("introduction")}</p>
+        <h2 className={styles.sectionHeadText}>{t("overview")}.</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
-        I'm a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks like
-        React, NextJs, and Tailwind. I'm a quick learner and collaborate closely with clients to create efficient,
-        scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to
-        life!
+        {t("about")}
       </motion.p>
 
       <div className="mt-20 flex justify-evenly flex-wrap gap-10">
