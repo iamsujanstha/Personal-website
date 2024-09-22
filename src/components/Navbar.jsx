@@ -9,14 +9,10 @@ import { ToggleContext } from "../providers/toggleLanguageProvider";
 import { useTranslation } from "react-i18next";
 import { nepaliFlag, englishFlag } from "../assets";
 
-
-const lang = localStorage.getItem(btoa(btoa("language")));
-
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [selectedLang, setSelectedLang] = useState(lang);
   const { toggleLanguage } = useContext(ToggleContext);
   const { t } = useTranslation("navbar");
 
@@ -45,9 +41,9 @@ const Navbar = () => {
 
   const handleSelect = (e) => {
     toggleLanguage(e.target.value);
-    setSelectedLang(e.target.value);
   }
 
+  console.log(i18n.language)
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 ${scrolled ? "bg-primary" : "bg-transparent"
@@ -82,17 +78,17 @@ const Navbar = () => {
             <select
               className="w-full bg-transparent font-bold text-[18px] pl-8 placeholder:text-seconday text-secondary text-sm border rounded pr-8 py-2 transition duration-300 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 shadow-sm focus:shadow-md appearance-none cursor-pointer"
               onChange={handleSelect}
-              defaultValue={lang}
+              value={i18n.language}
             >
-              <option value="en">English</option>
-              <option value="ne">नेपाली</option>
+              <option value="en" className="text-[#070517]">English</option>
+              <option value="ne" className="text-[#070517]">नेपाली</option>
               {/* <option value="hindi">Hindi</option> */}
             </select>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.2" stroke="currentColor" className="h-5 w-5 ml-1 absolute top-2.5 right-2.5 ">
               <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
             </svg>
             <div className="absolute top-2 left-2">
-              <img src={selectedLang === "en" ? englishFlag : nepaliFlag} alt="nepali flag" width={20} height={20} />
+              <img src={i18n.language === "en" ? englishFlag : nepaliFlag} alt="Flag" width={20} height={20} />
             </div>
           </div>
         </div>
