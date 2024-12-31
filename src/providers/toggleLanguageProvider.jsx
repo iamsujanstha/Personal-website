@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import CryptoJS from 'crypto-js';
 
-// Encryption/Decryption key (secure it in your environment, don't hardcode in production)
+
 const ENCRYPTION_KEY = 'localStorage-storing-lanaguage-key';
 
 export const ToggleContext = React.createContext({
@@ -30,8 +30,8 @@ const ToggleLanguageProvider = ({ children }) => {
         (language) => {
             if (language) {
                 i18n.changeLanguage(language);
-                const encryptedLanguage = encrypt(language); // Encrypt the language before storing
-                localStorage.setItem(btoa(btoa("language")), encryptedLanguage); // Save encrypted language in localStorage
+                const encryptedLanguage = encrypt(language);
+                localStorage.setItem(btoa(btoa("language")), encryptedLanguage);
             }
         },
         [i18n]
@@ -40,11 +40,11 @@ const ToggleLanguageProvider = ({ children }) => {
     useEffect(() => {
         const encryptedLanguage = localStorage.getItem(btoa(btoa("language")));
         if (!encryptedLanguage) {
-            changeLanguage('en'); // Default to English if no language is set
+            changeLanguage('en');
         } else {
-            const decryptedLanguage = decrypt(encryptedLanguage); // Decrypt the language from localStorage
+            const decryptedLanguage = decrypt(encryptedLanguage);
             if (decryptedLanguage) {
-                changeLanguage(decryptedLanguage); // Set the saved decrypted language
+                changeLanguage(decryptedLanguage);
             } else {
                 console.warn('Invalid encryption data, defaulting to English');
                 changeLanguage('en');
