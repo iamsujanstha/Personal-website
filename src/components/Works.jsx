@@ -108,11 +108,12 @@ const Works = () => {
         slidesPerView={3}
         centeredSlides={true}
         navigation={false}
+        onPause={true}
         loop={true}
         autoplay={{
           delay: 3000,
           disableOnInteraction: true,
-          pauseOnMouseEnter: false,
+          pauseOnMouseEnter: true,
         }}
         breakpoints={{
           640: {
