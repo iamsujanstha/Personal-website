@@ -1,7 +1,6 @@
 import {
   javascript,
   typescript,
-  html,
   css,
   reactjs,
   redux,
@@ -10,24 +9,21 @@ import {
   git,
   figma,
   docker,
-  hazesoft,
   aerion,
   nextjs,
   styledcomponent,
   sass,
   vue,
   otonomis,
-  carrent,
-  jobit,
-  tripguide,
   gmail,
   linkedin,
   github,
   taskmaster,
-  veterinary,
   portfolio,
-  smartapp,
   Info,
+  teamGenerator,
+  openLayers,
+  giphy,
 } from "../assets";
 
 export const navLinks = [
@@ -231,32 +227,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Task Master",
+    name: "Random Team Generator",
     description:
-      "Web-based platform that allows users to add, edit, delete and search tasks from the lists.This app helps you organize your tasks, set priorities.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux-saga",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: taskmaster,
-    source_code_link: "https://github.com/iamsujanstha/TaskMaster",
-    descriptionNe:
-      "वेब- आधारित प्लेटफर्म जसले प्रयोगकर्ताहरूलाई सूचीबाट कार्यहरू थप्न, सम्पादन गर्न, मेटाउन र खोज्न अनुमति दिन्छ। यो एपले तपाईंलाई आफ्नो कार्यहरू व्यवस्थित गर्न, प्राथमिकताहरू सेट गर्न मद्दत गर्छ।",
-  },
-  {
-    name: "SmartApp",
-    description:
-      "An application that allows users to generate photos, images, videos and voices using OpenAI's GPT-3 API. This app helps you generate content for your social media posts, blogs, articles, etc.",
+      "A smart team generator web app that lets users create random or balanced teams from a custom list of names. Users can optionally assign skill or performance ratings to each participant, allowing the app to intelligently balance teams based on those ratings. Perfect for classrooms, sports, events, or any group activity. Features include customizable team count and ratings.",
     tags: [
       {
         name: "nextjs",
@@ -267,7 +240,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "taiwlindcss",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
       {
@@ -275,79 +248,58 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: smartapp,
+    image: teamGenerator,
     source_code_link: "https://github.com/iamsujanstha/Smart-App",
+    url: "https://vite-team-generate.netlify.app/",
     descriptionNe:
-      "एउटा अनुप्रयोग जसले प्रयोगकर्ताहरूलाई OpenAI को GPT-3 API प्रयोग गरेर फोटो, छविहरू, भिडियोहरू र आवाजहरू उत्पन्न गर्न अनुमति दिन्छ। यो एपले तपाइँलाई तपाइँको सामाजिक मिडिया पोस्ट, ब्लग, लेख, आदि को लागी सामग्री उत्पन्न गर्न मद्दत गर्दछ।",
+      "स्मार्ट टिम जेनेरेटर एप जसले प्रयोगकर्ताहरूलाई नामहरूको सूचीबाट र्यान्डम वा ब्यालेन्स टिमहरू बनाउन दिन्छ। प्रयोगकर्ताहरूले प्रत्येक सहभागीलाई स्किल वा परफर्मेन्स रेटिङ दिन सक्छन्, जसको आधारमा एपले टिमहरूलाई संतुलित रूपमा विभाजित गर्छ। यो एप कक्षा, खेलकुद, कार्यक्रम वा कुनै पनि समूह गतिविधिको लागि उपयोगी छ। यसमा टिम संख्या अनुकूलन, सहभागी सूची इनपुट, रेटिङ-आधारित टिम विभाजन, टिम सुरक्षित गर्ने, र टिम फेरि मिलाउने सुविधा समावेश छन्।",
   },
   {
-    name: "Veterinary Care",
+    name: "OpenLayers Map",
     description:
-      "Veterinary care is a web-based platform that allows users to add, edit, delete and search pets from the lists.This app helps you organize your pets, set priorities.",
+      "An interactive map app using OpenLayers that allows users to view, manage, and interact with geospatial data visually.",
     tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "reactjs", color: "blue-text-gradient" },
+      { name: "Openlayers", color: "green-text-gradient" },
+      { name: "styled-components", color: "pink-text-gradient" },
     ],
-    image: veterinary,
-    source_code_link: "https://github.com/iamsujanstha/Veterinary-app",
-    descriptionNe: "पशु चिकित्सा हेरचाह एक वेब-आधारित प्लेटफर्म हो जसले प्रयोगकर्ताहरूलाई सूचीबाट घरपालुवा जनावरहरू थप्न, सम्पादन गर्न, मेटाउन र खोज्न अनुमति दिन्छ। यो एपले तपाईंलाई आफ्नो घरपालुवा जनावरहरूलाई व्यवस्थित गर्न, प्राथमिकताहरू सेट गर्न मद्दत गर्छ।"
+    image: openLayers,
+    source_code_link: "https://github.com/iamsujanstha/openlayers-map",
+    url: "https://github.com/iamsujanstha/openlayers-map",
+    descriptionNe:
+      "OpenLayers प्रयोग गरेर बनाइएको एउटा अन्तरक्रियात्मक नक्सा एप, जसले प्रयोगकर्ताहरूलाई भौगोलिक डेटा हेर्न, व्यवस्थापन गर्न र अन्तरक्रिया गर्न अनुमति दिन्छ।",
   },
   {
-    name: "Online Room Booking",
+    name: "Giphy Search",
     description:
-      "A comprehensive travel booking platform that allows users to book hotels and offers curated recommendations for popular destinations.",
+      "A fun web app that allows users to search for trending and random GIFs using the Giphy API. Includes infinite scroll and search filtering.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "prisma",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "Scss", color: "green-text-gradient" },
+      { name: "axios", color: "pink-text-gradient" },
     ],
-    image: tripguide,
-    source_code_link: "hhttps://github.com/iamsujanstha/online-room-booking",
+    image: giphy,
+    source_code_link: "https://github.com/iamsujanstha/giphy-search",
+    url: "https://giphy-app-search.netlify.app",
     descriptionNe:
-      "एक व्यापक यात्रा बुकिंग प्लेटफर्म जसले प्रयोगकर्ताहरूलाई होटलहरू बुक गर्न र लोकप्रिय गन्तव्यहरूको लागि क्युरेट गरिएका सिफारिसहरू प्रदान गर्न अनुमति दिन्छ।",
+      "Giphy API प्रयोग गरेर GIF खोज्न सकिने रमाइलो वेब एप। ट्रेन्डिङ, र्यान्डम GIF हेर्न र फिल्टर गरेर खोज्न सकिन्छ। इनफिनिट स्क्रोल सुविधा पनि छ।",
   },
   {
     name: "Portfolio",
     description:
-      "Portfolio website that showcases my skills and experience as a web developer. site is built with React and Framer Motion, and styled with Tailwind CSS.",
+      "A personal portfolio website built with React and Framer Motion to showcase my web development projects, skills, and experience.",
     tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "framer-motion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "framer-motion", color: "green-text-gradient" },
+      { name: "tailwindcss", color: "pink-text-gradient" },
     ],
     image: portfolio,
     source_code_link: "https://github.com/iamsujanstha/Personal-website",
+    url: "https://giphy-app-search.netlify.app",
     descriptionNe:
-      "पोर्टफोलियो वेबसाइट जसले वेब विकासकर्ताको रूपमा मेरो सीप र अनुभव प्रदर्शन गर्दछ। साइट React र Framer Motion सँग बनाइएको छ, र Tailwind CSS सँग स्टाइल गरिएको छ।",
+      "React र Framer Motion प्रयोग गरेर बनाइएको व्यक्तिगत पोर्टफोलियो वेबसाइट, जसले मेरो परियोजना, सीप र अनुभव प्रदर्शन गर्छ।",
   },
 ];
+
 
 export { services, technologies, experiences, testimonials, projects };

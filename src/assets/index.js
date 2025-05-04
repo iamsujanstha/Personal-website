@@ -38,11 +38,14 @@ import tripguide from "./tripguide.png";
 import taskmaster from "./taskmaster.png";
 import veterinary from "./veterinary.png";
 import portfolio from "./portfolio.png";
-import smartapp from "./smartapp.png";
+import teamGenerator from "./teamGenerator.png";
 import upArrow from './up-arrow.png'
 import Info from './info.png';
 import nepaliFlag from './nepal.svg';
-import englishFlag from './english.svg'
+import englishFlag from './english.svg';
+import openLayers from './openLayers.png';
+import giphy from './giphy.png';
+import newTab from './newTab.png';
 
 export {
   logo,
@@ -82,9 +85,12 @@ export {
   taskmaster,
   veterinary,
   portfolio,
-  smartapp,
   upArrow,
   Info,
   nepaliFlag,
-  englishFlag
+  englishFlag,
+  teamGenerator,
+  openLayers,
+  giphy,
+  newTab
 };
