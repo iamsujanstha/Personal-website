@@ -9,12 +9,10 @@ import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { useTranslation } from "react-i18next";
 import { getTextByLanguage } from "../i18n/i18n";
